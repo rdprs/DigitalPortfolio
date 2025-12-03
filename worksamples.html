@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River Johnson | Work Samples</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- Note: External style.css and navigation.js were removed as per single-file mandate -->
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-blue': '#1e40af', 
+                        'secondary-gray': '#4b5563', 
+                        'accent-orange': '#ea580c', 
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for the sticky nav background */
+        .sticky-nav {
+            background-color: white;
+        }
+    </style>
+</head>
+<body class="text-secondary-gray bg-gray-50">
+
+    <nav class="sticky-nav sticky top-0 z-50 shadow-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex-shrink-0 text-xl font-extrabold text-primary-blue tracking-tight">
+                    RIVER JOHNSON
+                </a>
+
+                <div class="hidden md:flex space-x-2">
+                    <a href="index.html" class="nav-link text-secondary-gray hover:text-primary-blue px-3 py-2 rounded-lg transition duration-200 font-medium">Home</a>
+                    <a href="resume.html" class="nav-link text-secondary-gray hover:text-primary-blue px-3 py-2 rounded-lg transition duration-200 font-medium">Resume</a>
+                    <a href="profileessay.html" class="nav-link text-secondary-gray hover:text-primary-blue px-3 py-2 rounded-lg transition duration-200 font-medium">Profile Essay</a>
+                    <a href="worksamples.html" class="nav-link bg-primary-blue text-white shadow-inner px-3 py-2 rounded-lg transition duration-200 font-medium">Work Samples</a>
+                    <a href="recommendations.html" class="nav-link text-secondary-gray hover:text-primary-blue px-3 py-2 rounded-lg transition duration-200 font-medium">Recommendations</a>
+                    <a href="transcript.html" class="nav-link text-secondary-gray hover:text-primary-blue px-3 py-2 rounded-lg transition duration-200 font-medium">Transcript</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" type="button" class="text-secondary-gray hover:text-primary-blue focus:outline-none">
+                        <span id="menu-icon"><i data-lucide="menu"></i></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block text-secondary-gray hover:bg-gray-100 hover:text-primary-blue rounded-md px-3 py-2 text-base font-medium">Home</a>
+                <a href="resume.html" class="block text-secondary-gray hover:bg-gray-100 hover:text-primary-blue rounded-md px-3 py-2 text-base font-medium">Resume</a>
+                <a href="profileessay.html" class="block text-secondary-gray hover:bg-gray-100 hover:text-primary-blue rounded-md px-3 py-2 text-base font-medium">Profile Essay</a>
+                <a href="worksamples.html" class="block bg-primary-blue text-white rounded-md px-3 py-2 text-base font-medium">Work Samples</a>
+                <a href="recommendations.html" class="block text-secondary-gray hover:bg-gray-100 hover:text-primary-blue rounded-md px-3 py-2 text-base font-medium">Recommendations</a>
+                <a href="transcript.html" class="block text-secondary-gray hover:bg-gray-100 hover:text-primary-blue rounded-md px-3 py-2 text-base font-medium">Transcript</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <section id="work-samples" class="content-section flex active flex-col p-8 bg-white shadow-xl rounded-3xl">
+            <h3 class="text-4xl font-bold text-gray-900 text-center mb-4">Work Samples</h3>
+			<p>‎ <p/>
+			<p>‎ <p/>
+			<p> <p/>
+
+            <div class="flex-grow w-full space-y-16 pb-12">
+                
+                <div class="grid md:grid-cols-2 gap-8 items-start border-b pb-8 border-gray-100">
+                    <!-- IMAGE CONTAINER FOR 5.PNG - MODIFIED FOR NO CROPPING -->
+                    <div class="w-full max-h-[500px] rounded-xl shadow-lg flex items-center justify-center p-4 bg-gray-100 order-2 md:order-1">
+                        <!-- KEY CHANGE: h-auto and object-contain -->
+                        <img src="5.png" alt="E-commerce Dashboard Preview" class="w-full h-auto object-contain rounded-lg">
+                    </div>
+
+                    <div class="p-4 order-1 md:order-2">
+                        <i data-lucide="layout-grid" class="w-8 h-8 text-primary-blue mb-2"></i>
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2">Sample 1: Jesse James Riding Stables</h4>
+                        <p class="text-lg mb-4 font-bold text-accent-orange">Trait Highlight: Accountability</p>
+                        <p class="text-base mb-4">
+                            This is a picture of the me riding a horse for Raven's Cross Haunted House. This job has taught me how to work for extended periods of time without water, food, or being able to see. I've worked at Jesse James Riding Stables for about 6 months, and was 'rented out' to Raven's Cross for Halloween. Through this role I demonstrate accountability by showing up daily, no matter how cold it is. 
+                        </p>
+                        
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 items-start border-b pb-8 border-gray-100">
+                    
+                    <div class="p-4 order-2 md:order-1">
+                        <i data-lucide="messages-square" class="w-8 h-8 text-primary-blue mb-2"></i>
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2">Sample 2: Taco Bell</h4>
+                        <p class="text-lg mb-4 font-bold text-accent-orange">Trait Highlight: Initiative, Skill/Knowledge</p>
+                        <p class="text-base mb-4">
+                            This job at Taco Bell has taught me both how to work effectively with a team, and in a fast paced environment. Through this role, I demonstrate initiative by showing up daily, and knowledge, through my memorization of different procedures (cleaning the grill, operating the cash register, etc)
+                        </p>
+                        
+                    </div>
+                    
+                    <!-- IMAGE CONTAINER FOR 4.PNG - MODIFIED FOR NO CROPPING -->
+                    <div class="w-full max-h-[500px] rounded-xl shadow-lg flex items-center justify-center p-4 bg-gray-100 order-1 md:order-2">
+                        <!-- KEY CHANGE: h-auto and object-contain -->
+                        <img src="4.png" alt="History Research Paper Preview" class="w-full h-auto object-contain rounded-lg">
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="p-4 bg-gray-50 rounded-xl shadow-inner flex flex-col items-center gap-2 order-2 md:order-1">
+                        <img src="1.png" alt="Group Design Sample 1" class="w-full h-auto rounded-lg shadow-md border border-gray-300">
+                        <img src="2.png" alt="Group Design Sample 2" class="w-full h-auto rounded-lg shadow-md border border-gray-300">
+                        <img src="3.png" alt="Group Design Sample 3" class="w-full h-auto rounded-lg shadow-md border border-gray-300">
+                    </div>
+
+                    <div class="p-4 order-1 md:order-2">
+                        <i data-lucide="palette" class="w-8 h-8 text-primary-blue mb-2"></i>
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2">Sample 3: Omega Technologies Website</h4>
+                        <p class="text-lg mb-4 font-bold text-accent-orange">Trait Highlight: **Skill/Knowledge**</p>
+                        <p class="text-base mb-4">
+                            This website was completed in November 2024, as part of an assignment to create a website for a local business. This project taught me how to create a project by a certain deadline and properly pace myself.
+                        </p>
+                        <a href="https://rjohn11118.github.io/LandingPage" class="text-primary-blue font-semibold hover:underline flex items-center gap-1 mt-2" target="_blank">
+                            View Live Demo <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="mt-12 w-full text-center">
+                <a href="recommendations.html" class="next-step-button inline-flex items-center justify-center gap-3 bg-primary-blue text-white px-10 py-4 rounded-full text-xl font-bold hover:bg-blue-800 shadow-xl transition duration-300">
+                    View Recommendations <i data-lucide="arrow-right-circle" class="w-6 h-6 text-white"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2025 River Johnson.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle and lucide icon rendering
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = document.getElementById('menu-icon').querySelector('i');
+                    if (mobileMenu.classList.contains('hidden')) {
+                        icon.setAttribute('data-lucide', 'menu');
+                    } else {
+                        icon.setAttribute('data-lucide', 'x');
+                    }
+                    lucide.createIcons();
+                });
+            }
+
+            // Render lucide icons
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>

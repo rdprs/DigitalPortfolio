@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River Johnson | Recommendations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-blue': '#1e40af', 
+                        'secondary-gray': '#4b5563', 
+                        'accent-orange': '#ea580c', 
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for the sticky nav background */
+        .sticky-nav {
+            background-color: white;
+        }
+        /* Style for the embedded PDF frame */
+        .pdf-frame {
+            background-color: #f7f7f7; /* Light background for the document look */
+        }
+        /* Responsive aspect ratio container for the PDF iframe (3:4 portrait for a document look) */
+        .aspect-3-4 {
+            /* This is a common aspect ratio for A4/Letter size documents */
+            aspect-ratio: 3 / 4; 
+            padding: 0;
+            margin-bottom: 0 !important; 
+        }
+        /* Ensure the iframe itself is perfectly sized to the container */
+        .pdf-frame iframe {
+             display: block;
+             width: 100%;
+             height: 100%;
+             border: none;
+             margin: 0;
+             padding: 0;
+        }
+    </style>
+</head>
+<body class="text-secondary-gray bg-gray-50">
+
+    <nav class="sticky-nav sticky top-0 z-50 shadow-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex-shrink-0 text-xl font-extrabold text-primary-blue tracking-tight">
+                    RIVER JOHNSON
+                </a>
+
+                <div class="hidden md:flex space-x-2">
+                    <a href="index.html" class="nav-link text-secondary-gray hover:text-primary-blue px-3 py-2 rounded-lg transition duration-200 font-medium">Home</a>
+                    <a href="resume.html" class="nav-link text-secondary-gray hover:text-primary-blue px-3 py-2 rounded-lg transition duration-200 font-medium">Resume</a>
+                    <a href="profileessay.html" class="nav-link text-secondary-gray hover:text-primary-blue px-3 py-2 rounded-lg transition duration-200 font-medium">Profile Essay</a>
+                    <a href="worksamples.html" class="nav-link text-secondary-gray hover:text-primary-blue px-3 py-2 rounded-lg transition duration-200 font-medium">Work Samples</a>
+                    <a href="recommendations.html" class="nav-link bg-primary-blue text-white shadow-inner px-3 py-2 rounded-lg transition duration-200 font-medium">Recommendations</a>
+                    <a href="transcript.html" class="nav-link text-secondary-gray hover:text-primary-blue px-3 py-2 rounded-lg transition duration-200 font-medium">Transcript</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" type="button" class="text-secondary-gray hover:text-primary-blue focus:outline-none">
+                        <span id="menu-icon"><i data-lucide="menu"></i></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block text-secondary-gray hover:bg-gray-100 hover:text-primary-blue rounded-md px-3 py-2 text-base font-medium">Home</a>
+                <a href="resume.html" class="block text-secondary-gray hover:bg-gray-100 hover:text-primary-blue rounded-md px-3 py-2 text-base font-medium">Resume</a>
+                <a href="profileessay.html" class="block text-secondary-gray hover:bg-gray-100 hover:text-primary-blue rounded-md px-3 py-2 text-base font-medium">Profile Essay</a>
+                <a href="worksamples.html" class="block text-secondary-gray hover:bg-gray-100 hover:text-primary-blue rounded-md px-3 py-2 text-base font-medium">Work Samples</a>
+                <a href="recommendations.html" class="block bg-primary-blue text-white rounded-md px-3 py-2 text-base font-medium">Recommendations</a>
+                <a href="transcript.html" class="block text-secondary-gray hover:bg-gray-100 hover:text-primary-blue rounded-md px-3 py-2 text-base font-medium">Transcript</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <section id="recommendations" class="content-section flex flex-col p-8 bg-white shadow-xl rounded-3xl">
+            <h3 class="text-4xl font-bold text-gray-900 text-center mb-4">Letters of Recommendation</h3>
+            <p class="text-center text-lg max-w-4xl mx-auto mb-8 text-secondary-gray">
+                These documents from mentors, teachers, and coaches highlight my academic ability, leadership, and character.
+            </p>
+
+            <!-- Download All Recommendations Button -->
+            <div class="flex justify-center mb-12">
+                <a href="recommendations_bundle.pdf" download class="inline-flex items-center justify-center gap-3 bg-primary-blue text-white px-8 py-3 rounded-full text-xl font-bold hover:bg-blue-800 shadow-xl transition duration-200">
+                    Download All 3 Letters <i data-lucide="download-cloud" class="w-6 h-6 text-white"></i>
+                </a>
+            </div>
+
+            <!-- Three Side-by-Side Recommendation Cards using a responsive grid -->
+            <div class="grid md:grid-cols-3 gap-8 md:gap-12 w-full">
+                
+                <!-- Recommendation 1: Academic Focus -->
+                <div class="flex flex-col p-4 rounded-xl shadow-lg border border-gray-100 bg-gray-50">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 text-center">Weightlifting Coach</h4>
+								<p>‎ <p/>
+
+                    
+                    <!-- PDF Viewer Iframe - Uses 1.pdf -->
+                    <div class="w-full relative aspect-3-4 rounded-lg overflow-hidden border-4 border-primary-blue/30 shadow-md pdf-frame mb-4">
+                        <iframe src="1.pdf" class="w-full h-full" title="Academic Recommendation PDF Preview"></iframe>
+                    </div>
+                    
+                    <!-- Description & Download Link - Using min-h to ensure cards are level -->
+                    <div class="text-center flex flex-col flex-grow">
+                        <div class="min-h-[6rem] flex flex-col justify-center">
+									<p>‎ <p/>
+
+                            <p class="text-sm text-secondary-gray mb-3">
+                                Focuses on my performance in AP U.S. History, highlighting my critical analysis, research rigor, and strong writing skills.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Recommendation 2: Leadership Focus -->
+                <div class="flex flex-col p-4 rounded-xl shadow-lg border border-gray-100 bg-gray-50">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 text-center">BCHS Tech Office Teacher</h4>
+                    
+                    <!-- PDF Viewer Iframe - Uses 2.pdf -->
+                    <div class="w-full relative aspect-3-4 rounded-lg overflow-hidden border-4 border-primary-blue/30 shadow-md pdf-frame mb-4">
+                        <iframe src="2.pdf" class="w-full h-full" title="Leadership Recommendation PDF Preview"></iframe>
+                    </div>
+                    
+                    <!-- Description & Download Link - Using min-h to ensure cards are level -->
+                    <div class="text-center flex flex-col flex-grow">
+                        <div class="min-h-[6rem] flex flex-col justify-center">
+									<p>‎ <p/>
+
+                            <p class="text-sm text-secondary-gray mb-3">
+                                Highlights my leadership abilities, commitment to teamwork, and successful project management as President of the Robotics Club.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Recommendation 3: Character/Service Focus -->
+                <div class="flex flex-col p-4 rounded-xl shadow-lg border border-gray-100 bg-gray-50">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 text-center">Head of BCHS Tech Office</h4>
+                    
+                    <!-- PDF Viewer Iframe - Uses 3.pdf -->
+                    <div class="w-full relative aspect-3-4 rounded-lg overflow-hidden border-4 border-primary-blue/30 shadow-md pdf-frame mb-4">
+                        <iframe src="3.pdf" class="w-full h-full" title="Character Recommendation PDF Preview"></iframe>
+                    </div>
+                    
+                    <!-- Description & Download Link - Using min-h to ensure cards are level -->
+                    <div class="text-center flex flex-col flex-grow">
+                        <div class="min-h-[6rem] flex flex-col justify-center">
+									<p>‎ <p/>
+
+                            <p class="text-sm text-secondary-gray mb-3">
+                                Attests to my strong work ethic, integrity, and dedication to community service through the local food bank initiative.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="mt-16 w-full text-center">
+                <a href="transcript.html" class="next-step-button inline-flex items-center justify-center gap-3 bg-primary-blue text-white px-10 py-4 rounded-full text-xl font-bold hover:bg-blue-800 shadow-xl transition duration-300">
+                    View Transcript <i data-lucide="arrow-right-circle" class="w-6 h-6 text-white"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2025 River Johnson. Crafted with code.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle and lucide icon rendering
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (mobileMenu.classList.contains('hidden')) {
+                        icon.setAttribute('data-lucide', 'menu');
+                    } else {
+                        icon.setAttribute('data-lucide', 'x');
+                    }
+                    lucide.createIcons();
+                });
+            }
+
+            // Render lucide icons
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
